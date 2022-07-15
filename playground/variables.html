@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Variables!</title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
+
+  <body>
+    <script>
+      "use strict";
+      // The three ways to declare a variable are below.
+      var first = "Evan"; // This is a variable declaration statement.
+      console.log(first);
+      let age = 34;
+      const cool = true;
+      // Below is a code block which does not require semi colons. The block is within the curly braces.
+      if (age > 10) {
+        console.log("You old AF!");
+      }
+
+      /*
+    Var and Let can be reused. 
+    For example you can redeclare variable first and when you redeclare you do not use the term var again.
+    */
+      first = "Billy";
+      console.log(first);
+      console.log();
+      /*
+    Use strict at top of javascript makes it so that you need to strictly adhere to JS principles.
+    For example the below call of dog will not work because it has not been defined in a variable.
+    */
+      // dog = 'snickers';
+      /*
+    SCOPING
+    Let and Const are block scoped amd Var are fxn scoped.
+    Let and Const came about in ES6 and Var has been around forever.
+    It is good practice to default to const then if you need to change a value of a variable you should then use let.
+    */
+      /*
+    NAMING CONVENTION
+    Not recommended to use a capital letter. You should use alphabet and you can also use $ or _ symbols however they are common in jQuery
+    and Lodash libraries, respectively.
+    For two words variables should be camel cased for example: const camelCase = 'Camels';
+    You can also use underscores for SNAKE CASE.
+    There is also KEBAB CASE which uses hyphens and is NOT allowed in JS.
+    */
+    </script>
+  </body>
+</html>

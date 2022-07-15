@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The DOM</title>
+  <link rel="stylesheet" href="../../base.css">
+  <!-- IF you put the JS here and try to access the DOM it will run the JS before the DOM elements are even created and spit back a null warning in console. -->
+</head>
+
+<body>
+
+  <p class="evan">I am Evan, I <em>love</em> to BBQ and <strong>make websites</strong>.</p>
+
+  <img class="nice" src="https://picsum.photos/600" alt="" srcset="">
+
+  <div class="items">
+    <p>Hi I'm a item</p>
+    <div>
+      <article class="item">
+        <h2>Sub Div</h2>
+        <p>Hi I'm a item</p>
+      </article>
+    </div>
+    <img src="https://source.unsplash.com/random/200x200" />
+    <p>Hi I'm a item</p>
+    <p>Hi I'm a item</p>
+  </div>
+
+  <style>
+    h2 span {
+      display: none;
+    }
+
+    img {
+      transition: all 0.2s;
+    }
+
+    .round {
+      border-radius: 50%;
+    }
+  </style>
+  <!-- Best to put your script src here after the DOM loads it's elements. -->
+  <!-- <script src="./the-dom.js"></script> -->
+  <script src="./traversing.js"></script>
+</body>
+
+</html>
